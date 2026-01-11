@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SmartYatra</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="disha_title">Disha AI</string>
+    <string name="disha_subtitle">An AI chatbot to help plan your trips</string>
+    <string name="disha_welcome_message">Hello! How can I assist you?</string>
+    <string name="disha_hint">Type a message</string>
+    <string name="option_icon">Profile option icon</string>
+</resources>

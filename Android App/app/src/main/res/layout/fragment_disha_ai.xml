@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_disha_ai">
+
+    <!-- Main Chat Card with Rounded Corners -->
+    <LinearLayout
+        android:id="@+id/chatCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_white_rounded_top"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true">
+
+        <!-- Gradient Title Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="vertical"
+            android:background="@drawable/bg_gradient_disha_ai"
+            android:padding="24dp"
+            android:clipToOutline="true">
+
+            <TextView
+                android:id="@+id/tvDishaTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disha AI"
+                android:textColor="#FFF"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An AI chatbot to help plan your trips"
+                android:textColor="#FFF"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- Scrollable Chat Message Area -->
+        <ScrollView
+            android:id="@+id/chatScroll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="24dp"
+            android:background="@android:color/transparent">
+
+            <LinearLayout
+                android:id="@+id/chatArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Example message bubble -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_chat_bubble"
+                    android:padding="12dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp"
+                    android:layout_gravity="start">
+
+                    <TextView
+                        android:id="@+id/tvFirstMessage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hello! How can I assist you?"
+                        android:textColor="#222c34"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+                <!-- Additional message bubbles can be dynamically added here -->
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!-- Chat Input Area -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etMessage"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_chat_input"
+                android:hint="Type a message"
+                android:textColor="#222c34"
+                android:textColorHint="#BBB"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textSize="16sp"/>
+
+            <ImageButton
+                android:id="@+id/btnSend"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_chat_send"
+                android:src="@android:drawable/ic_menu_send"
+                app:tint="#FFF"
+                android:layout_marginLeft="12dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

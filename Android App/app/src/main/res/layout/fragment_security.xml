@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Gradient background -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_gradient"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Security"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Start/Stop row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btnStart"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:text="Start"
+                    android:background="@drawable/round_button"
+                    android:textColor="@android:color/white"/>
+
+                <Button
+                    android:id="@+id/btnStop"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:text="Stop"
+                    android:background="@drawable/round_button"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+            <!-- Map card (bigger) -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_card">
+
+                <com.example.smartyatra.MapTouchWrapper
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/round_card">
+
+                    <fragment
+                        android:id="@+id/map"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </com.example.smartyatra.MapTouchWrapper>
+
+            </FrameLayout>
+
+            <!-- SOS section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="SOS"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:weightSum="3">
+
+                <Button
+                    android:id="@+id/btnWomen"
+                    android:textSize="11sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="96dp"
+                    android:text="Women\nHelpline"
+                    android:gravity="center"
+                    android:background="@drawable/round_card_light"/>
+
+                <Button
+                    android:id="@+id/btnSOS"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="96dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="SOS"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:background="@drawable/round_card_red"
+                    android:textColor="@android:color/white"/>
+
+                <Button
+                    android:id="@+id/btnHelpdesk"
+                    android:textSize="11sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="96dp"
+                    android:text="Helpdesk"
+                    android:gravity="center"
+                    android:background="@drawable/round_card_light"/>
+            </LinearLayout>
+
+            <!-- Test button -->
+            <Button
+                android:id="@+id/btnTest"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="16dp"
+                android:text="Test Warning"
+                android:background="@drawable/round_button"
+                android:textColor="@android:color/white"/>
+
+            <!-- bottom nav placeholder -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_bottom_nav"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

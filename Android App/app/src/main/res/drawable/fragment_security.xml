@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_security"
+    android:paddingTop="36dp"
+    android:paddingBottom="16dp"
+    android:paddingStart="0dp"
+    android:paddingEnd="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="28dp"
+        android:paddingEnd="28dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/security_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Security"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Name entry -->
+        <EditText
+            android:id="@+id/security_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:hint="Enter name"
+            android:textSize="18sp"
+            android:background="@drawable/bg_card"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="12dp"
+            android:inputType="textPersonName"
+            android:textColor="#222c34"/>
+
+        <!-- Start/Stop buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="18dp">
+
+            <Button
+                android:id="@+id/security_start_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:text="Start"
+                android:textSize="18sp"
+                android:textColor="#222c34"
+                android:background="@drawable/bg_card_button"/>
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="1dp"/>
+
+            <Button
+                android:id="@+id/security_stop_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:text="Stop"
+                android:textSize="18sp"
+                android:textColor="#222c34"
+                android:background="@drawable/bg_card_button"/>
+        </LinearLayout>
+
+        <!-- Map placeholder -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/bg_map_placeholder"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- SOS Section Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SOS"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#222c34"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- SOS Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="18dp">
+
+            <Button
+                android:id="@+id/security_women_helpline_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="90dp"
+                android:text="Women Helpline"
+                android:textSize="16sp"
+                android:textColor="#222c34"
+                android:background="@drawable/bg_card"/>
+
+            <Space
+                android:layout_width="14dp"
+                android:layout_height="1dp"/>
+
+            <Button
+                android:id="@+id/security_sos_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="90dp"
+                android:text="SOS"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:background="@drawable/bg_sos_button"/>
+
+            <Space
+                android:layout_width="14dp"
+                android:layout_height="1dp"/>
+
+            <Button
+                android:id="@+id/security_helpdesk_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="90dp"
+                android:text="Helpdesk"
+                android:textSize="16sp"
+                android:textColor="#222c34"
+                android:background="@drawable/bg_card"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#36005B"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="start">
+
+        <!-- Welcome, User -->
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome,\nUser"
+            android:textSize="32sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Search Box -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/rounded_white"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_search"
+                android:layout_marginEnd="12dp" />
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Search"
+                android:textColor="#444"
+                android:textColorHint="#888"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- EXPLORE title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EXPLORE"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Horizontal list Explore places -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Place 1 -->
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_white"
+                    android:layout_marginRight="12dp"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_shillong"
+                        android:background="@drawable/rounded_img"
+                        android:clipToOutline="true" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Shillong"
+                        android:textColor="#222c34"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:layout_marginTop="8dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Scotland of East"
+                        android:textColor="#888"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+
+                <!-- Place 2 -->
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_white"
+                    android:layout_marginRight="12dp"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_kaziranga"
+                        android:background="@drawable/rounded_img"
+                        android:clipToOutline="true" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kaziranga"
+                        android:textColor="#222c34"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:layout_marginTop="8dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Wildlife Sanctuary"
+                        android:textColor="#888"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+
+                <!-- Place 3 -->
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_white"
+                    android:layout_marginRight="12dp"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_tawang"
+                        android:background="@drawable/rounded_img"
+                        android:clipToOutline="true" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tawang"
+                        android:textColor="#222c34"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:layout_marginTop="8dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Monastery Town"
+                        android:textColor="#888"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+
+                <!-- Place 4 -->
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_white"
+                    android:layout_marginRight="12dp"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_cherrapunji"
+                        android:background="@drawable/rounded_img"
+                        android:clipToOutline="true" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cherrapunji"
+                        android:textColor="#222c34"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:layout_marginTop="8dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Wettest Place"
+                        android:textColor="#888"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- NEARBY ATTRACTIONS title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEARBY ATTRACTIONS"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Attraction 1 -->
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_white"
+                    android:layout_marginRight="12dp"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_umiam"
+                        android:background="@drawable/rounded_img"
+                        android:clipToOutline="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Umiam Lake"
+                        android:textColor="#222c34"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+
+                <!-- Attraction 2 -->
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_white"
+                    android:layout_marginRight="12dp"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_mawsynram"
+                        android:background="@drawable/rounded_img"
+                        android:clipToOutline="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mawsynram"
+                        android:textColor="#222c34"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- EVENT HIGHLIGHTS title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EVENT HIGHLIGHTS"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:paddingBottom="12dp"
+            android:clipToPadding="false">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp">
+
+                <!-- Event Card 1 -->
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_white"
+                    android:padding="12dp"
+                    android:layout_marginEnd="16dp"
+                    android:elevation="4dp"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/event_hornbill"
+                        android:background="@drawable/rounded_img"
+                        android:clipToOutline="true" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hornbill Festival"
+                        android:textSize="18sp"
+                        android:textColor="#222c34"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:ellipsize="end"
+                        android:maxLines="1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dec 1 - Dec 10, Kohima"
+                        android:textSize="14sp"
+                        android:textColor="#666666"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+
+                <!-- Event Card 2 -->
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_white"
+                    android:padding="12dp"
+                    android:layout_marginEnd="16dp"
+                    android:elevation="4dp"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/event_dances"
+                        android:background="@drawable/rounded_img"
+                        android:clipToOutline="true" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tribal Dance Fest"
+                        android:textSize="18sp"
+                        android:textColor="#222c34"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:ellipsize="end"
+                        android:maxLines="1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jan 15 - Jan 20, Shillong"
+                        android:textSize="14sp"
+                        android:textColor="#666666"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+
+                <!-- Add more event cards as needed -->
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+</ScrollView>

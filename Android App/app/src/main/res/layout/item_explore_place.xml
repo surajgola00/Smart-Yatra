@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="140dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/rounded_white"
+    android:padding="8dp"
+    android:layout_marginEnd="12dp">
+
+    <ImageView
+        android:id="@+id/imgPlace"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_shillong" />
+
+    <TextView
+        android:id="@+id/tvPlaceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#222c34"
+        android:gravity="center"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tvPlaceDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place Description"
+        android:textSize="12sp"
+        android:textColor="#888"
+        android:gravity="center"/>
+</LinearLayout>

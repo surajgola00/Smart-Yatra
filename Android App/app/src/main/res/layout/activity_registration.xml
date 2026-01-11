@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8F4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tvRegTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#222c34"
+            android:layout_marginBottom="32dp" />
+
+        <EditText
+            android:id="@+id/etRegName"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Name"
+            android:background="@drawable/edittext_bg"
+            android:paddingStart="18dp"
+            android:textColor="#222c34"
+            android:textColorHint="#8a8f99"
+            android:layout_marginBottom="18dp" />
+
+        <EditText
+            android:id="@+id/etRegAge"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Age"
+            android:inputType="number"
+            android:background="@drawable/edittext_bg"
+            android:paddingStart="18dp"
+            android:textColor="#222c34"
+            android:textColorHint="#8a8f99"
+            android:layout_marginBottom="18dp" />
+
+        <EditText
+            android:id="@+id/etRegGender"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Gender"
+            android:background="@drawable/edittext_bg"
+            android:paddingStart="18dp"
+            android:textColor="#222c34"
+            android:textColorHint="#8a8f99"
+            android:layout_marginBottom="18dp" />
+
+        <EditText
+            android:id="@+id/etRegBloodType"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Blood Type"
+            android:background="@drawable/edittext_bg"
+            android:paddingStart="18dp"
+            android:textColor="#222c34"
+            android:textColorHint="#8a8f99"
+            android:layout_marginBottom="18dp" />
+
+        <EditText
+            android:id="@+id/etRegEmail"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittext_bg"
+            android:paddingStart="18dp"
+            android:textColor="#222c34"
+            android:textColorHint="#8a8f99"
+            android:layout_marginBottom="18dp" />
+
+        <EditText
+            android:id="@+id/etRegPhone"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:background="@drawable/edittext_bg"
+            android:paddingStart="18dp"
+            android:textColor="#222c34"
+            android:textColorHint="#8a8f99"
+            android:layout_marginBottom="18dp" />
+
+        <EditText
+            android:id="@+id/etRegPrefLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Preferred Language"
+            android:background="@drawable/edittext_bg"
+            android:paddingStart="18dp"
+            android:textColor="#222c34"
+            android:textColorHint="#8a8f99"
+            android:layout_marginBottom="18dp" />
+
+        <EditText
+            android:id="@+id/etRegEmergencyContact"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Emergency Contact"
+            android:inputType="phone"
+            android:background="@drawable/edittext_bg"
+            android:paddingStart="18dp"
+            android:textColor="#222c34"
+            android:textColorHint="#8a8f99"
+            android:layout_marginBottom="18dp" />
+
+        <EditText
+            android:id="@+id/etRegEmergencyContactRelation"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Emergency Contact Relation"
+            android:background="@drawable/edittext_bg"
+            android:paddingStart="18dp"
+            android:textColor="#222c34"
+            android:textColorHint="#8a8f99"
+            android:layout_marginBottom="18dp" />
+
+        <EditText
+            android:id="@+id/etRegCurrentLocation"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Current Location"
+            android:background="@drawable/edittext_bg"
+            android:paddingStart="18dp"
+            android:textColor="#222c34"
+            android:textColorHint="#8a8f99"
+            android:layout_marginBottom="18dp" />
+
+        <EditText
+            android:id="@+id/etRegNationality"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Nationality"
+            android:background="@drawable/edittext_bg"
+            android:paddingStart="18dp"
+            android:textColor="#222c34"
+            android:textColorHint="#8a8f99"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btnRegisterConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Register"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:backgroundTint="#34aaff"
+            android:background="@drawable/button_bg" />
+    </LinearLayout>
+</ScrollView>

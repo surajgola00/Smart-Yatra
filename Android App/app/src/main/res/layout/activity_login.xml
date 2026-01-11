@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="32dp">
+
+        <!-- Plane Icon -->
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_plane"
+            android:contentDescription="App Logo"
+            android:layout_marginBottom="16dp" />
+
+        <!-- App Title -->
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smart Yatra"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#222c34"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Email Input -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittext_bg"
+            android:paddingStart="18dp"
+            android:textColor="#222c34"
+            android:textColorHint="#8a8f99"
+            android:layout_marginBottom="18dp" />
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext_bg"
+            android:paddingStart="18dp"
+            android:textColor="#222c34"
+            android:textColorHint="#8a8f99"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Log in"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:backgroundTint="#34aaff"
+            android:background="@drawable/button_bg"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New User? Register"
+            android:textColor="#34aaff"
+            android:textSize="16sp"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</ScrollView>
