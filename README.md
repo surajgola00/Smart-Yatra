@@ -455,7 +455,7 @@ It handles user registration, location tracking, AI-based itinerary assistance, 
 
 backend/
 │── app.py
-│── requirements.txt
+└── requirements.txt
 
 ```
 
@@ -661,8 +661,8 @@ database="database"
 ## 🔄 Data Flow
 
 ```
-Android App ──▶ Flask API ──▶ MySQL
-                    │
+Android App ──▶ Flask API ──▶ Admin Panel
+                    ├──▶ MySQL (LDatabase)
                     ├──▶ Admin Panel (Live Tracking)
                     └──▶ Disha AI (Meta AI)
 ```
