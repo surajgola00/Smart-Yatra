@@ -1,27 +1,24 @@
 # 📱 Smart Yatra – Android Application
 
-```md
 ## 🎥 Project Demo
 
-👉 [Watch Problem Video]()
+https://github.com/user-attachments/assets/edf076df-227f-4eec-b489-38a9ccbee6c1
 
 ---
 
 ## 🈸 App APK
 
-👉 [Download]()
+👉 [Download](https://drive.google.com/file/d/1C0cAOX9gM0-6xUQ5sJx3Bfc2cKnmUebl/view?usp=sharing)
 
 ### 🔑 Sample Login Credentials
 
 ```
-
-Email: [suraj@example.com]
+Email: suraj@example.com
 Password: suraj123
-
 ```
 
 > Use the above credentials to explore the app features without creating a new account.
-```
+
 
 ## Overview
 
@@ -928,6 +925,12 @@ pip install -r requirements.txt
 ---
 
 This backend API acts as the **core engine of Smart Yatra**, ensuring tourist safety, intelligent assistance, and seamless coordination with authorities.
+
+---
+
+## 📸 Glimpse 
+
+https://github.com/user-attachments/assets/8a4b9df6-b45b-4ce9-83a8-edb1c3007893
 
 ## 👨‍💻 Authors  
 
