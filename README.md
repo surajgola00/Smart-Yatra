@@ -1,14 +1,27 @@
 # 📱 Smart Yatra – Android Application
 
-## 🎥 Project Demo  
+```md
+## 🎥 Project Demo
 
 👉 [Watch Problem Video]()
 
-## 🈸 App APK  
+---
+
+## 🈸 App APK
 
 👉 [Download]()
-sample credentials: email: suraj@example.com password:suraj123
 
+### 🔑 Sample Login Credentials
+
+```
+
+Email: [suraj@example.com]
+Password: suraj123
+
+```
+
+> Use the above credentials to explore the app features without creating a new account.
+```
 
 ## Overview
 
