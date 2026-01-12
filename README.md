@@ -2,7 +2,7 @@
 
 ## 🎥 Project Demo
 
-https://github.com/user-attachments/assets/edf076df-227f-4eec-b489-38a9ccbee6c1
+👉 [Watch Problem Video](https://drive.google.com/file/d/1kj6SQ3OnHBST44NhxIyrrUaoDwa3o3Tg/view?usp=sharing)
 
 ---
 
